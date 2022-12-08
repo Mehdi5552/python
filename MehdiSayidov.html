@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <meta chrarset="UTF-8">
+	    <title>pythonMehdiSayidov</title>
+	</head>
+	<body>
+	    <h1>PYTHON</h1>
+		<img class="MMImage-Preview" src="https://avatars.dzeninfra.ru/get-zen_doc/5218804/pub_62d9dd078a00c02c1882e72c_62d9dd799d059c55febecfc9/scale_1200" data-load-timing="1" style="max-height: 632px;" width="300px" height = "300px">
+		<h3>привет! Сегодня я Научу приколам на пайтон!<h3>
+		<br>Ну как научу я не в этом смысле я буду писать <br>тут коды а ты будешь копиривать их и вставлять в пайтон!
+		<br>Вот например как сделать убегающию кнопку да
+		<br>
+		<br>
+		<br>from tkinter import *
+<br>from tkinter import messagebox
+<br>import random
+<br>
+<br>
+<br>def no():
+  <br> messagebox.showinfo(' ', 'Спасибо! ваш голос учтён!')
+  <br> quit()
+<br>
+<br>
+<br>def motionMouse(event):
+    <br>btnYes.place(x=random.randint(0, 500), y=random.randint(0, 500))
+<br>
+<br>
+<br>
+<br>
+<br>root = Tk()
+<br>vroot.geometry('600x600')
+<br>root.title('Опрос')
+<br>root.resizable(width=False, height=False)
+<br>root['bg'] = 'white'
+<br>
+<br>label = Label(root, text='Вы хотите 10000$?', font='Arial 20 bold', bg='white').pack
+<br>btnYes = Button(root, text='ДА', font='Arial 20 bold')
+<br>btnYes.place(x=170, y=100)
+<br>btnYes.bind('<Enter>', motionMouse)
+<br>btnNo = Button(root, text='НЕТ', font='Arial 20 bold', command=no).place(x=350, y=100)
+<br>
+<br>
+<br>root.mainloop()
+ 
